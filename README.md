@@ -7,20 +7,20 @@
   
 
 ```cpp
- int potPin = A0;
- float voltage=0.0;
+ int potPin = A0;  //  وصل شدهA0 پین انالوگ 
+ float voltage=0.0; // متغیر ولتاژ
 
   
  void setup() {
   Serial.begin(9600);
  }
   void loop () {
-   int sensor =analogRead(potpin);
-  voltage = sensor* (5.0/1023.0);
+   int sensor =analogRead(potpin); // A0مقدار انالوگ خوانده شده از  
+  voltage = sensor* (5.0/1023.0); // مقدار ولتاژ را محاسبه می کند
    
-  Serial.print("voltage:");
-  Serial.print(voltage);
-  Serial.print("V");
-     delay(10);
+  Serial.print("voltage:"); // چاپ سریال مانیتور
+  Serial.print(voltage); 
+  Serial.print("V"); // مقدار ولتاژ
+     delay(10); // تاخیر یک دهم
 }
 ```
